@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.grid-container {
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid-row {
+    display: flex;
+    gap: 10px;
+}
+
+.grid-row div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    flex: 1;
+}

@@ -22,3 +22,7 @@
     border: 1px solid black;
     flex: 1;
 }
+
+.grid-item.hovered {
+    background-color: black;
+}

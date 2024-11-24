@@ -1,4 +1,5 @@
 const gridContainer = document.querySelector(".grid-container");
+const newGridBtn = document.querySelector(".create-new-grid button");
 
 function attachEventListener(element) {
     element.addEventListener("mouseenter", () => {
@@ -21,5 +22,14 @@ function createGrid(row, column = row) {
         gridContainer.appendChild(gridRow);
     }
 }
+
+newGridBtn.addEventListener("click", () => {
+    const gridSize = Number(prompt("Enter size for the new grid"));
+    
+    if(gridSize && gridSize <= 100) {
+        gridContainer.textContent = "";
+        createGrid(gridSize);
+    }
+});
 
 createGrid(16);

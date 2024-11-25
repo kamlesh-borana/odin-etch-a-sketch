@@ -26,7 +26,7 @@ function createGrid(row, column = row) {
 newGridBtn.addEventListener("click", () => {
     const gridSize = Number(prompt("Enter size for the new grid"));
     
-    if(gridSize && gridSize <= 100) {
+    if(gridSize > 0 && gridSize <= 100) {
         gridContainer.textContent = "";
         createGrid(gridSize);
     }

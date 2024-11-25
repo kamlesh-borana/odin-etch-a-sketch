@@ -8,13 +8,13 @@
     margin: 40px auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 960px;
+    gap: 4px;
+    max-width: 760px;
 }
 
 .grid-row {
     display: flex;
-    gap: 10px;
+    gap: 4px;
 }
 
 .grid-item {

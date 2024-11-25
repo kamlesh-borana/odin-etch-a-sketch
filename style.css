@@ -5,10 +5,11 @@
 }
 
 .grid-container {
-    margin: 40px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 960px;
 }
 
 .grid-row {

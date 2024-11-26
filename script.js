@@ -1,9 +1,16 @@
 const gridContainer = document.querySelector(".grid-container");
 const newGridBtn = document.querySelector(".create-new-grid button");
 
+function getRandomNumber(end, start = 0) {
+    const randomNumber = Math.floor(Math.random() * end) + start;
+    
+    return randomNumber;
+}
+
 function attachEventListener(element) {
     element.addEventListener("mouseenter", () => {
         element.classList.add("hovered");
+        element.style.backgroundColor = `rgb(${getRandomNumber(255)}, ${getRandomNumber(255)}, ${getRandomNumber(255)})`;
     });
 }
 

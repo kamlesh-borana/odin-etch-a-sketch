@@ -11,6 +11,11 @@ function attachEventListener(element) {
     element.addEventListener("mouseenter", () => {
         element.classList.add("hovered");
         element.style.backgroundColor = `rgb(${getRandomNumber(255)}, ${getRandomNumber(255)}, ${getRandomNumber(255)})`;
+
+        const elementOpacity = Number(element.style.opacity) || 0;
+        if(elementOpacity < 1) {
+            element.style.opacity = elementOpacity + 0.1;
+        }
     });
 }
 
